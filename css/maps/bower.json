@@ -1,14 +1,25 @@
 {
-  "name": "Chart.js",
-  "version": "2.1.4",
-  "description": "Simple HTML5 Charts using the canvas element",
-  "homepage": "https://github.com/chartjs/Chart.js",
-  "author": "nnnick",
-  "license": "MIT",
-  "main": [
-    "dist/Chart.js"
+  "name": "DateJS",
+  "version": "1.0.0-rc1",
+  "homepage": "https://github.com/abritinthebay/datejs",
+  "authors": [
+    "Gregory Wild-Smith"
   ],
-  "devDependencies": {
-    "jquery": "~2.1.4"
-  }
+  "description": "Datejs is an open-source JavaScript Date Library.",
+  "main": "build/production/date.min.js",
+  "keywords": [
+    "date",
+    "javascript",
+    "js",
+    "mit"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "specs"
+  ]
 }
