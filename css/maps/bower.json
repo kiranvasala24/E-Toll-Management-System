@@ -1,34 +1,14 @@
 {
-  "name": "bootstrap",
-  "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
-  "keywords": [
-    "css",
-    "js",
-    "less",
-    "mobile-first",
-    "responsive",
-    "front-end",
-    "framework",
-    "web"
-  ],
-  "homepage": "http://getbootstrap.com",
+  "name": "Chart.js",
+  "version": "2.1.4",
+  "description": "Simple HTML5 Charts using the canvas element",
+  "homepage": "https://github.com/chartjs/Chart.js",
+  "author": "nnnick",
   "license": "MIT",
-  "moduleType": "globals",
   "main": [
-    "less/bootstrap.less",
-    "dist/js/bootstrap.js"
+    "dist/Chart.js"
   ],
-  "ignore": [
-    "/.*",
-    "_config.yml",
-    "CNAME",
-    "composer.json",
-    "CONTRIBUTING.md",
-    "docs",
-    "js/tests",
-    "test-infra"
-  ],
-  "dependencies": {
-    "jquery": "1.9.1 - 2"
+  "devDependencies": {
+    "jquery": "~2.1.4"
   }
 }
