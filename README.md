@@ -1,22 +1,11 @@
-# gentelella
+E-Toll Management System
 
-Gentelella Admin is a free to use Bootstrap admin template.
-This template uses the default Bootstrap 3 styles along with a variety of powerful jQuery plugins and tools to create a powerful framework for creating admin panels or back-end dashboards.
+Automatic toll collection using Optical Character Recognition (OCR) aims at successfully removing unnecessary traffic delays, faster and reliable processing and transaction of toll tax aiming to go cashless. 
+In this, OCR is a widely used technology which converts scanned images of printed text, handwritten text characters into encoded text information such as ASCII. It has three major parts: vehicle number plate extraction, character segmentation and OCR. 
+Number plate extraction is that stage where a vehicle number plate is detected. The detected number plate is pre- processed and then the result is passed to the segmentation part to segment the individual characters from the extracted number plate. 
+The segmented characters are normalized and passed to an OCR algorithm. At last the optical character information will be converted into encoded text. The characters are recognized using Template matching. 
+The final output must be in the form of a string of characters along with comparison of the characters (number plate) with the database for a successful transaction of toll tax.
 
-Theme uses several libraries for charts, calendar, form validation, wizard style interface, off-canvas navigation menu, text forms, date range, upload area, form autocomplete, range slider, progress bars, notifications and much more.
-
-We would love to see how you use this awesome admin template. You can notify us about your site, app or service by tweeting to [@colorlib](https://twitter.com/colorlib). Once the list will grown long enough we will write a post similar to [this](https://colorlib.com/wp/avada-theme-examples/) to showcase the best examples.
-
-
-## Theme Demo
-![Gentelella Bootstrap Admin Template](https://cdn.colorlib.com/wp/wp-content/uploads/sites/2/gentelella-admin-template-preview.jpg 
-"Gentelella Theme Browser Preview")
-
-**[Template Demo](https://colorlib.com/polygon/gentelella/index.html)**
-
-## Documentation
-
-**[Documentation](https://puikinsh.github.io/gentelella/)**
 
 ## Installation via Package Manager
 
@@ -119,7 +108,3 @@ Let us know if you have done integration for this admin template on other platfo
 * [WordPress Admin Templates](https://colorlib.com/wp/wordpress-admin-dashboard-themes-plugins/ "List of WordPress Admin Dashboard Templates and Plugins by Colorlib") - List of the best WordPress admin dashboard templates and plugins that will add a personal touch to your WordPress dashboard.
 * [WordPress Themes](https://colorlib.com/wp/free-wordpress-themes/ "List of Free WordPress themes by Colorlib") - A huge selection of the best free WordPress themes that are all licensed under GPL and are available for personal and commercial use without restrictions.
 
-## License information
-Gentelella is licensed under The MIT License (MIT). Which means that you can use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software. But you always need to state that Colorlib is the original author of this template.
-
-Project is developed and maintained by [Colorlib](https://colorlib.com/ "Colorlib - Make Your First Blog") and Aigars Silkalns
