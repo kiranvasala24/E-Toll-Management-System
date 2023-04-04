@@ -6,14 +6,14 @@ import platform
 import sys
 import ssl
 
-from pip._vendor import idna
-from pip._vendor import urllib3
-from pip._vendor import chardet
+import idna
+import urllib3
+import chardet
 
 from . import __version__ as requests_version
 
 try:
-    from pip._vendor.urllib3.contrib import pyopenssl
+    from urllib3.contrib import pyopenssl
 except ImportError:
     pyopenssl = None
     OpenSSL = None

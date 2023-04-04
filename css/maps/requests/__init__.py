@@ -40,8 +40,8 @@ is at <http://python-requests.org>.
 :license: Apache 2.0, see LICENSE for more details.
 """
 
-from pip._vendor import urllib3
-from pip._vendor import chardet
+import urllib3
+import chardet
 import warnings
 from .exceptions import RequestsDependencyWarning
 
@@ -57,10 +57,10 @@ def check_compatibility(urllib3_version, chardet_version):
     # Check urllib3 for compatibility.
     major, minor, patch = urllib3_version  # noqa: F811
     major, minor, patch = int(major), int(minor), int(patch)
-    # urllib3 >= 1.21.1, <= 1.24
+    # urllib3 >= 1.21.1, <= 1.25
     assert major == 1
     assert minor >= 21
-    assert minor <= 24
+    assert minor <= 25
 
     # Check chardet for compatibility.
     major, minor, patch = chardet_version.split('.')[:3]
@@ -91,20 +91,18 @@ except (AssertionError, ValueError):
                   RequestsDependencyWarning)
 
 # Attempt to enable urllib3's SNI support, if possible
-from pip._internal.utils.compat import WINDOWS
-if not WINDOWS:
-    try:
-        from pip._vendor.urllib3.contrib import pyopenssl
-        pyopenssl.inject_into_urllib3()
+try:
+    from urllib3.contrib import pyopenssl
+    pyopenssl.inject_into_urllib3()
 
-        # Check cryptography version
-        from cryptography import __version__ as cryptography_version
-        _check_cryptography(cryptography_version)
-    except ImportError:
-        pass
+    # Check cryptography version
+    from cryptography import __version__ as cryptography_version
+    _check_cryptography(cryptography_version)
+except ImportError:
+    pass
 
 # urllib3's DependencyWarnings should be silenced.
-from pip._vendor.urllib3.exceptions import DependencyWarning
+from urllib3.exceptions import DependencyWarning
 warnings.simplefilter('ignore', DependencyWarning)
 
 from .__version__ import __title__, __description__, __url__, __version__
